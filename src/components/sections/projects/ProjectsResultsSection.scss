@@ -1,0 +1,106 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.projects-results {
+  background: linear-gradient(
+    180deg,
+    rgba($white, 0.95),
+    rgba($lavender-web, 0.4)
+  );
+  padding-top: 40px;
+  // padding-block: $section-padding;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .section-header {
+    text-align: center;
+    max-width: 800px;
+    margin-inline: auto;
+
+    .section-title {
+      margin-top: 10px;
+    }
+  }
+
+  .content-grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr;
+  }
+
+  .result-card {
+    position: relative;
+    height: 100%;
+    background: $white;
+    border-radius: $radius-24;
+    padding: 48px 36px;
+    box-shadow: $shadow-2;
+    border: 1px solid rgba($rust-brown, 0.05);
+    transition: transform $transition-2, box-shadow $transition-2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: $shadow-3;
+
+      .icon-badge {
+        background: $rust-brown;
+        color: $white;
+        transform: scale(1.1);
+      }
+    }
+
+    .icon-badge {
+      width: 80px;
+      height: 80px;
+      border-radius: $radius-24;
+      background: rgba($rust-brown, 0.06);
+      color: $rust-brown;
+      @include flex-center;
+      font-size: 3.2rem;
+      margin-bottom: 24px;
+      transition: $transition-2;
+
+      ion-icon {
+        --ionicon-stroke-width: 32px;
+      }
+    }
+
+    .card-title {
+      font-size: $fs-3;
+      margin-bottom: 16px;
+      color: $charcoal;
+    }
+
+    .section-text {
+      color: $black-coral;
+      font-size: $fs-7;
+      line-height: 1.6;
+      max-width: 35ch;
+    }
+  }
+
+  @include tablet-up {
+    .content-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include desktop-up {
+    .content-grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 36px;
+    }
+
+    .result-card {
+      padding: 56px 32px;
+    }
+  }
+}

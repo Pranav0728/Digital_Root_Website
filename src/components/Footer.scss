@@ -1,0 +1,143 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.footer {
+  background-color: $charcoal;
+  padding-block: 60px 100px;
+  color: $light-gray;
+
+  .container {
+    @include laptop-up {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+.footer-brand {
+  .footer-text {
+    margin-block: 20px;
+  }
+
+  .social-list {
+    color: $white;
+  }
+}
+
+.footer-list {
+  .h4 {
+    color: $white;
+    margin-block-end: 16px;
+  }
+}
+
+.footer-text {
+  color: $light-gray;
+  line-height: 1.6;
+}
+
+.footer-link {
+  padding-block: 4px;
+  transition: $transition-1;
+  color: $light-gray;
+
+  &:is(:hover, :focus-visible) {
+    color: $rust-brown;
+  }
+
+  &[aria-current='page'] {
+    color: $rust-brown;
+    font-weight: $fw-700;
+  }
+}
+
+.input-wrapper {
+  position: relative;
+  margin-block-start: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-field {
+  background-color: $white_a3;
+  color: $light-gray;
+  font-size: $fs-7;
+  padding: 12px 16px;
+  border: 1px solid $rust-brown-dark;
+  border-top-left-radius: $radius-6;
+  border-bottom-left-radius: $radius-6;
+  box-shadow: $shadow-3;
+  outline: none;
+  width: 100%;
+
+  &::placeholder {
+    color: inherit;
+  }
+
+  &:focus {
+    border-color: $rust-brown;
+  }
+
+  &.error {
+    border-color: #ff6b6b;
+    background-color: rgba(255, 107, 107, 0.1);
+  }
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 2px;
+  display: block;
+}
+
+.submit-btn {
+  border-radius: 0 $radius-6 $radius-6 0;
+  background-color: $rust-brown;
+  color: $white;
+  padding-inline: 24px;
+  font-weight: $fw-700;
+  transition: $transition-1;
+  border: none;
+  cursor: pointer;
+  max-height: 51.5px;
+
+  &:is(:hover, :focus-visible):not(:disabled) {
+    background-color: $blue-crayola;
+  }
+
+  &:disabled {
+    background-color: $light-gray;
+    color: $charcoal;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+// Footer list title styles
+.footer-list-title {
+  color: $white;
+  margin-block-end: 16px;
+}
+
+// Responsive styles
+@include desktop-up {
+  .footer-brand {
+    .footer-text {
+      padding-inline-end: 100px;
+      margin-block-end: 16px;
+    }
+  }
+
+  address.footer-text {
+    padding-inline-end: 100px;
+    margin-block-end: 16px;
+  }
+}

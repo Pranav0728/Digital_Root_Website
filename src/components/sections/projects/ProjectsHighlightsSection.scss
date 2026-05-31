@@ -1,0 +1,166 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.projects-highlights {
+  background: linear-gradient(
+    180deg,
+    rgba($lavender-web, 0.45),
+    rgba($white, 0)
+  );
+  padding-block: $section-padding;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .section-heading {
+    text-align: center;
+    max-width: 800px;
+    margin-inline: auto;
+    margin-bottom: 20px;
+
+    .section-title {
+      margin-top: 10px;
+      margin-bottom: 16px;
+    }
+
+    .section-text {
+      color: $black-coral;
+      font-size: $fs-5;
+      line-height: 1.6;
+      max-width: 60ch;
+      margin-inline: auto;
+    }
+  }
+
+  .grid-list {
+    display: grid;
+    gap: 32px;
+  }
+
+  .project-card {
+    position: relative;
+    border-radius: $radius-24;
+    overflow: hidden;
+    background: $white;
+    box-shadow: $shadow-2;
+    transition: transform $transition-2, box-shadow $transition-2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: $shadow-3;
+
+      .card-banner .img-cover {
+        transform: scale(1.05);
+      }
+    }
+
+    .card-banner {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+
+      .badge {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: rgba($white, 0.9);
+        color: $rust-brown;
+        width: 40px;
+        height: 40px;
+        border-radius: $radius-circle;
+        @include flex-center;
+        font-weight: $fw-700;
+        font-size: $fs-5;
+        z-index: 2;
+        box-shadow: $shadow-1;
+      }
+
+      .img-cover {
+        transition: transform $transition-2;
+        object-fit: cover;
+        
+      }
+    }
+
+    .card-content {
+      padding: 30px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 12px;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center; gap: 6px; padding: 6px 14px; border-radius: $radius-pill; background: rgba($rust-brown, 0.06); color: $rust-brown; font-size: $fs-8; font-weight: $fw-700; text-transform: uppercase; letter-spacing: 0.05em;
+
+      ion-icon {
+        font-size: 1.4rem;
+      }
+    }
+
+    .card-title {
+      font-size: $fs-3;
+      line-height: 1.3;
+
+      a {
+        color: $charcoal;
+        transition: color $transition-1;
+
+        &:hover {
+          color: $rust-brown;
+        }
+      }
+    }
+
+    .card-text {
+      color: $black-coral;
+      font-size: $fs-7;
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  @include tablet-up {
+    .grid-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include desktop-up {
+    .grid-list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 48px;
+    }
+
+    .project-card {
+      .card-content {
+        padding: 40px;
+        gap: 20px;
+      }
+
+      .card-title {
+        font-size: $fs-2;
+      }
+
+      .card-text {
+        font-size: $fs-5;
+        -webkit-line-clamp: 4;
+      }
+    }
+  }
+}

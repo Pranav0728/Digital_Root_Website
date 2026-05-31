@@ -1,0 +1,170 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 $white-a70;
+  }
+
+  75% {
+    box-shadow: 0 0 0 20px transparent;
+  }
+}
+
+.hero {
+  padding-block-start: calc(#{$section-padding} + 70px);
+  text-align: center;
+
+  .container {
+    display: grid;
+    gap: 70px;
+  }
+}
+
+.hero-content {
+  .h1 {
+    color: $white;
+  }
+}
+
+.hero-text {
+  font-size: $fs-5;
+  color: $white;
+  margin-block: 24px 36px;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: $radius-10;
+}
+
+.hero-card {
+  .play-btn {
+    @include absolute-center;
+    @include button-reset;
+    background-color: $white;
+    color: $charcoal;
+    font-size: 2rem;
+    padding: 25px;
+    border-radius: $radius-circle;
+    transition: $transition-1;
+    animation: pulse 2s ease infinite;
+
+    &:is(:hover, :focus-visible) {
+      color: $rust-brown;
+    }
+  }
+}
+
+.slider-inner {
+  border-radius: $radius-10;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 575 / 550;
+  width: 100%;
+}
+
+.slider-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: $radius-10;
+  overflow: hidden;
+}
+
+.slider-btn {
+  @include button-reset;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $white-a70;
+  color: $charcoal;
+  font-size: 2rem;
+  padding: 12px;
+  border-radius: $radius-circle;
+  transition: $transition-1;
+  z-index: 5;
+
+  &:is(:hover, :focus-visible) {
+    background-color: $white;
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  &.prev {
+    left: 20px;
+  }
+
+  &.next {
+    right: 20px;
+  }
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+
+  .dot-btn {
+    @include button-reset;
+    width: 10px;
+    height: 10px;
+    border-radius: $radius-circle;
+    background-color: hsla(0, 0%, 100%, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+
+    &.active {
+      background-color: $rust-brown;
+      width: 28px;
+      border-radius: $radius-pill;
+      border-color: $rust-brown;
+    }
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+}
+
+// Responsive styles
+@include desktop-up {
+  .hero {
+    padding-block-start: calc(#{$section-padding} + 50px);
+    text-align: left;
+
+    .container {
+      grid-template-columns: 1fr 0.8fr;
+      align-items: center;
+    }
+  }
+
+  .hero-content {
+    max-width: unset;
+    margin-inline: 0;
+  }
+
+  .btn-wrapper {
+    justify-content: flex-start;
+  }
+
+  .hero-text {
+    padding-inline-end: 100px;
+  }
+}
