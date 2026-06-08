@@ -10,13 +10,13 @@ import ServiceSection from '@/components/sections/home/ServiceSection';
 import StatSection from '@/components/sections/home/StatSection';
 
 export const metadata: Metadata = {
-  title: 'Altairz • Web Development & Digital Solutions',
+  title: 'Digital Root • Web Development & Digital Solutions',
   description:
-    'Altairz helps startups and businesses launch scalable web applications, AI solutions, automation systems, and custom software that drive real results.',
+    'Digital Root helps startups and businesses launch scalable web applications, AI solutions, automation systems, and custom software that drive real results.',
   openGraph: {
-    title: 'Altairz • Web Development & Digital Solutions',
+    title: 'Digital Root • Web Development & Digital Solutions',
     description:
-      'Altairz helps startups and businesses launch scalable web applications, AI solutions, automation systems, and custom software that drive real results.',
+      'Digital Root helps startups and businesses launch scalable web applications, AI solutions, automation systems, and custom software that drive real results.',
     images: ['/assets/images/hero-slide1.png'],
   },
 };

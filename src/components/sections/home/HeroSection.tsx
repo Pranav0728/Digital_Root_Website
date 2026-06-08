@@ -11,31 +11,31 @@ const slides = [
   {
     id: 1,
     src: '/assets/images/hero-slide1.png',
-    alt: 'Altairz hero banner 1',
+    alt: 'Digital Root hero banner 1',
     hasPlayButton: false,
   },
   {
     id: 2,
     src: '/assets/images/hero-slide2.png',
-    alt: 'Altairz intro banner',
+    alt: 'Digital Root intro banner',
     hasPlayButton: false,
   },
   {
     id: 3,
     src: '/assets/images/hero-slide3.png',
-    alt: 'Altairz hero banner 3',
+    alt: 'Digital Root hero banner 3',
     hasPlayButton: false,
   },
   {
     id: 4,
     src: '/assets/images/hero-slide4.png',
-    alt: 'Altairz hero banner 4',
+    alt: 'Digital Root hero banner 4',
     hasPlayButton: false,
   },
   {
     id: 5,
     src: '/assets/images/hero-slide5.png',
-    alt: 'Altairz hero banner 5',
+    alt: 'Digital Root hero banner 5',
     hasPlayButton: false,
   },
 ];
@@ -169,7 +169,7 @@ const HeroSection: React.FC = () => {
             </motion.div>
           </figure>
 
-          <button className="play-btn" aria-label="play Altairz intro">
+          <button className="play-btn" aria-label="play Digital Root intro">
             <ion-icon name="play" aria-hidden={true}></ion-icon>
           </button>
         </div>

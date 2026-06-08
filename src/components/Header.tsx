@@ -22,16 +22,29 @@ const Header = () => {
     // { href: '/blog', label: 'Blog' },
   ];
 
-  const socialLinks: SocialLink[] = [
-    { href: 'https://twitter.com', icon: 'logo-twitter', label: 'Twitter' },
-    { href: 'https://facebook.com', icon: 'logo-facebook', label: 'Facebook' },
-    { href: 'https://dribbble.com', icon: 'logo-dribbble', label: 'Dribbble' },
+   const socialLinks: SocialLink[] = [
     {
-      href: 'https://instagram.com',
+      href: 'https://x.com/molawade_pranav',
+      icon: 'logo-twitter',
+      label: 'X',
+    },
+    {
+      href: 'https://www.linkedin.com/in/pranav-molawade/',
+      icon: 'logo-linkedin',
+      label: 'LinkedIn',
+    },
+    {
+      href: 'https://www.instagram.com/pranav_2_8',
       icon: 'logo-instagram',
       label: 'Instagram',
     },
-    { href: 'https://youtube.com', icon: 'logo-youtube', label: 'YouTube' },
+    {
+      href: 'https://github.com/Pranav0728',
+      icon: 'logo-github',
+      label: 'GitHub',
+    },
+        { href: 'https://www.youtube.com/@pranav8534', icon: 'logo-youtube', label: 'YouTube' },
+
   ];
 
   useEffect(() => {
@@ -68,17 +81,17 @@ const Header = () => {
       <div className="container">
         <Link href="/" className="logo">
           <Image
-            src="/assets/images/altairz-light.svg"
-            width={100}
+            src="/assets/images/logos/logo-darkbg.png"
+            width={50}
             height={30}
-            alt="Altairz home"
+            alt="Digital Root home"
             className="logo-light"
           />
           <Image
-            src="/assets/images/altairz-dark.svg"
-            width={100}
+            src="/assets/images/logos/logo1rbg.png"
+            width={50}
             height={30}
-            alt="Altairz home"
+            alt="Digital Root home"
             className="logo-dark"
           />
         </Link>
@@ -87,10 +100,10 @@ const Header = () => {
           <div className="navbar-top">
             <Link href="/" className="logo">
               <Image
-                src="/assets/images/altairz-light.svg"
-                width={100}
+                src="/assets/images/logos/logo-darkbg.png"
+                width={50}
                 height={30}
-                alt="Altairz home"
+                alt="Digital Root home"
               />
             </Link>
 

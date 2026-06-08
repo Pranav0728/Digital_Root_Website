@@ -30,7 +30,7 @@ const ProjectsCTASection = () => {
 
         <motion.p className="section-text" variants={fadeIn('up', 20, 0.58)}>
           From website design and development to hosting, domains, and SEO,
-          Altairz provides everything you need to build, launch, and grow your
+          Digital Root provides everything you need to build, launch, and grow your
           business online.
         </motion.p>
 

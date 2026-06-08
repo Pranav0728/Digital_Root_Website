@@ -1,6 +1,6 @@
 {
-  "name": "Altairz Digital Studio",
-  "short_name": "Altairz",
+  "name": "Digital Root",
+  "short_name": "Digital Root",
   "description": "Professional digital agency specializing in web development, design, and digital solutions.",
   "start_url": "/",
   "display": "standalone",
@@ -8,9 +8,9 @@
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/favicon.ico",
       "sizes": "any",
-      "type": "image/svg+xml"
+      "type": "image/x-icon"
     }
   ]
 }

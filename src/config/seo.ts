@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 
 // Base SEO configuration
 export const siteConfig = {
-  name: 'Altairz Digital Studio',
+  name: 'Digital Root',
   description:
     'Professional digital agency specializing in web development, design, and digital solutions. Transform your business with cutting-edge technology.',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://Altairz-agency.com',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://digitalroot.tech',
   ogImage: '/assets/images/og-image.jpg',
   links: {
     twitter: 'https://twitter.com/adexstudio',
@@ -34,9 +34,9 @@ export const defaultMetadata: Metadata = {
     'React',
     'TypeScript',
   ],
-  authors: [{ name: 'Altairz Digital Studio' }],
-  creator: 'Altairz Digital Studio',
-  publisher: 'Altairz Digital Studio',
+  authors: [{ name: 'Digital Root' }],
+  creator: 'Digital Root',
+  publisher: 'Digital Root',
   formatDetection: {
     email: false,
     address: false,
@@ -77,9 +77,9 @@ export const defaultMetadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.svg',
-    shortcut: '/favicon.svg',
-    apple: '/favicon.svg',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
   manifest: '/manifest.json',
   verification: {

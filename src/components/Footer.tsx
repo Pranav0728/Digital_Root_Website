@@ -52,25 +52,27 @@ const Footer = () => {
   };
   const socialLinks: SocialLink[] = [
     {
-      href: 'https://x.com/yourusername',
+      href: 'https://x.com/molawade_pranav',
       icon: 'logo-twitter',
       label: 'X',
     },
     {
-      href: 'https://linkedin.com/in/yourusername',
+      href: 'https://www.linkedin.com/in/pranav-molawade/',
       icon: 'logo-linkedin',
       label: 'LinkedIn',
     },
     {
-      href: 'https://instagram.com/yourusername',
+      href: 'https://www.instagram.com/pranav_2_8',
       icon: 'logo-instagram',
       label: 'Instagram',
     },
     {
-      href: 'https://github.com/yourusername',
+      href: 'https://github.com/Pranav0728',
       icon: 'logo-github',
       label: 'GitHub',
     },
+        { href: 'https://www.youtube.com/@pranav8534', icon: 'logo-youtube', label: 'YouTube' },
+
   ];
 
   return (
@@ -79,15 +81,15 @@ const Footer = () => {
         <div className="footer-brand">
           <Link href="/" className="logo">
             <Image
-              src="/assets/images/altairz-light.svg"
-              width={74}
+              src="/assets/images/logos/logo-darkbg.png"
+              width={54}
               height={24}
-              alt="Altairz home"
+              alt="Digital Root home"
             />
           </Link>
 
           <p className="footer-text">
-            &copy; {new Date().getFullYear()} Altairz Technologies. <br />
+            &copy; {new Date().getFullYear()} Digital Root Technologies. <br />
             All rights reserved.
           </p>
 

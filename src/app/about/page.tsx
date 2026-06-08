@@ -10,7 +10,7 @@ import AboutValuesSection from '@/components/sections/about/AboutValuesSection';
 export const metadata: Metadata = {
   title: 'About Us',
   description:
-    'Learn more about Altairz Digital Studio - our story, mission, and the team behind our success.',
+    'Learn more about Digital Root - our story, mission, and the team behind our success.',
 };
 
 export default function About() {

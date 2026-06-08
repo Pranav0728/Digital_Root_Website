@@ -94,15 +94,15 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/favicon.svg',
-        destination: '/assets/images/favicon.svg',
+        source: '/favicon.ico',
+        destination: '/assets/images/favicon.ico',
       },
     ];
   },
 
   // Environment variables that should be available on the client
   env: {
-    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'https://Altairz-agency.com',
+    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'https://digitalroot.tech',
   },
 
   // Production source maps (disable for security, enable for debugging)

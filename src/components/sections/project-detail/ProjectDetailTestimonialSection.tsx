@@ -43,7 +43,7 @@ const ProjectDetailTestimonialSection = ({
       <motion.div className="cta-card" variants={fadeInScale(0.55, 0.16)}>
         <div>
           <p className="section-subtitle" id="project-testimonial-title">
-            Partner with Altairz
+            Partner with Digital Root
           </p>
           <h2 className="h3">Let’s explore what’s next together.</h2>
           <p className="section-text">

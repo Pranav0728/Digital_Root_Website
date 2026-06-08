@@ -14,7 +14,7 @@ const storyAccordionItems = [
     id: 'about-human-centered',
     title: 'A Passion for Building',
     content:
-      'Altairz was born from a passion for technology and problem-solving. What started as a curiosity about coding gradually became a mission to create digital solutions that help people and businesses succeed online. Through continuous learning, experimentation, and dedication, we transformed ideas into real products and services.',
+      'Digital Root was born from a passion for technology and problem-solving. What started as a curiosity about coding gradually became a mission to create digital solutions that help people and businesses succeed online. Through continuous learning, experimentation, and dedication, we transformed ideas into real products and services.',
   },
   {
     id: 'about-cross-functional',
@@ -26,7 +26,7 @@ const storyAccordionItems = [
     id: 'about-measurable-impact',
     title: 'Committed to Your Growth',
     content:
-      'Today, Altairz helps businesses establish a strong digital presence through professional websites, domain registration, hosting, and SEO services. We understand that every business has unique goals, and we are committed to creating solutions that build trust, attract customers, and support long-term growth.',
+      'Today, Digital Root helps businesses establish a strong digital presence through professional websites, domain registration, hosting, and SEO services. We understand that every business has unique goals, and we are committed to creating solutions that build trust, attract customers, and support long-term growth.',
   },
 ];
 
@@ -86,7 +86,7 @@ const AboutStorySection = () => {
               className="section-text"
               variants={fadeIn('up', 26, 0.6)}
             >
-              Altairz was built on a passion for creating meaningful digital solutions.
+              Digital Root was built on a passion for creating meaningful digital solutions.
               From developing SaaS products to building websites for businesses, our
               journey has always been about solving real problems through technology.
               Today, we help startups, entrepreneurs, and growing businesses establish a

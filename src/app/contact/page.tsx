@@ -8,7 +8,7 @@ import HeroSection from '@/components/sections/contact/HeroSection';
 export const metadata: Metadata = {
   title: 'Contact Us',
   description:
-    "Get in touch with Altairz Digital Studio. Let's discuss your next digital project.",
+    "Get in touch with Digital Root. Let's discuss your next digital project.",
 };
 
 export default function Contact() {

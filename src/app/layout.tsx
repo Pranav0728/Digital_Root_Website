@@ -37,9 +37,9 @@ export default function RootLayout({
         />
 
         {/* Favicon fallback */}
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="alternate icon" href="/favicon.svg" />
-
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="alternate icon" href="/favicon.ico" />
+        
         {/* Preload critical images */}
         <link rel="preload" as="image" href="/assets/images/hero-bg-br.png" />
         <link rel="preload" as="image" href="/assets/images/hero-slide1.png" />
