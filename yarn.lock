@@ -238,12 +238,19 @@
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
-"@types/node@^20.10.5":
+"@types/node@*", "@types/node@^20.10.5":
   version "20.19.19"
   resolved "https://registry.npmjs.org/@types/node/-/node-20.19.19.tgz"
   integrity sha512-pb1Uqj5WJP7wrcbLU7Ru4QtA0+3kAXrkutGiD26wUKzSMgNNaPARTUDQmElUXp64kh3cWdou3Q0C7qwwxqSFmg==
   dependencies:
     undici-types "~6.21.0"
+
+"@types/nodemailer@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@types/nodemailer/-/nodemailer-8.0.0.tgz"
+  integrity sha512-fyf8jWULsCo0d0BuoQ75i6IeoHs47qcqxWc7yUdUcV0pOZGjUTTOvwdG1PRXUDqN/8A64yQdQdnA2pZgcdi+cA==
+  dependencies:
+    "@types/node" "*"
 
 "@types/prop-types@*":
   version "15.7.15"
@@ -2175,6 +2182,11 @@ node-addon-api@^7.0.0:
   version "7.1.1"
   resolved "https://registry.npmjs.org/node-addon-api/-/node-addon-api-7.1.1.tgz"
   integrity sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ==
+
+nodemailer@^8.0.10:
+  version "8.0.10"
+  resolved "https://registry.npmjs.org/nodemailer/-/nodemailer-8.0.10.tgz"
+  integrity sha512-BLFuSth7QtHOkBzyqTehWWyub0NTRDuK2Q2SQfnGLsrJnzyU+Yeh4WpV1eZGuARFj1xQJHIdnTuJZLP+b9R1GQ==
 
 object-assign@^4.1.1:
   version "4.1.1"

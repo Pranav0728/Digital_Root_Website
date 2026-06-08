@@ -54,23 +54,25 @@ const ConnectSection = () => {
 
   const onSubmit = async (data: ProjectContactFormData) => {
     try {
-      // Handle form submission logic here
-      // Example: await submitProjectContact(data);
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
 
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
 
-      // Reset form on successful submission
       reset();
-
-      // You can add success notification here
       alert(
-        `Thank you ${data.name}! Your request has been submitted successfully. We will contact you at ${data.email} within one business day.`
+        `Thank you ${data.name}! Your request has been sent successfully. We will contact you at ${data.email} shortly.`
       );
     } catch (error) {
-      // You can add error notification here
       console.error('Form submission error:', error);
-      alert('Failed to submit request. Please try again.');
+      alert('Failed to send message. Please try again or contact us directly via email.');
     }
   };
   return (
@@ -104,7 +106,7 @@ const ConnectSection = () => {
               </div>
               <div>
                 <p className="card-title">Hours</p>
-                <p className="card-text">Mon – Fri, 8:30 AM to 7:00 PM GMT</p>
+                <p className="card-text">Sun – Sat, 8:30 AM to 10:00 PM</p>
               </div>
             </li>
             <li>
@@ -114,7 +116,7 @@ const ConnectSection = () => {
               <div>
                 <p className="card-title">Locations</p>
                 <p className="card-text">
-                  London • Berlin • Singapore • Remote
+                  Mumbai • Remote
                 </p>
               </div>
             </li>
@@ -201,18 +203,18 @@ const ConnectSection = () => {
 
             <div className="form-field">
               <label className="form-label" htmlFor="contact-budget">
-                Estimated budget
+                Project Type
               </label>
               <select
                 id="contact-budget"
                 className={`input-field ${errors.budget ? 'error' : ''}`}
                 {...register('budget')}
               >
-                <option value="">Choose an option</option>
-                <option value="50-100">$50k – $100k</option>
-                <option value="100-250">$100k – $250k</option>
-                <option value="250-500">$250k – $500k</option>
-                <option value="500+">$500k+</option>
+                <option value="">Select service</option>
+                <option value="Web Development">Web Development & Design</option>
+                <option value="Domain & Hosting">Domain & Hosting</option>
+                <option value="SEO Optimization">SEO Optimization</option>
+                <option value="Full Digital Solution">Full Digital Solution</option>
               </select>
               {errors.budget && (
                 <span className="error-message">{errors.budget.message}</span>

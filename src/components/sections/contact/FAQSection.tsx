@@ -8,22 +8,40 @@ import './FAQSection.scss';
 
 const faqItems = [
   {
-    id: 'contact-start-date',
-    title: 'How soon can we begin?',
+    id: 'website-cost',
+    title: 'How much does a website cost?',
     content:
-      'After a short discovery call we can usually mobilize a squad within two weeks. Tight timelines? Let us know and we’ll share a rapid kickoff plan.',
+      'The cost depends on your requirements, features, and design preferences. We offer solutions for businesses of all sizes and provide a custom quote based on your project needs.',
   },
   {
-    id: 'contact-collaboration',
-    title: 'Can you work with our internal team?',
+    id: 'project-timeline',
+    title: 'How long does it take to build a website?',
     content:
-      'Absolutely. We regularly integrate with product, engineering, and growth teams to embed new rituals, tooling, and ways of working.',
+      'Most business websites are completed within 1 to 3 weeks. More complex websites with custom features may take longer depending on the project scope.',
   },
   {
-    id: 'contact-post-launch',
-    title: 'Do you handle post-launch optimization?',
+    id: 'domain-hosting',
+    title: 'Do you provide domain registration and hosting?',
     content:
-      'Yes. Our optimization labs offer ongoing experimentation, analytics, and engineering support to keep your product learning and improving.',
+      'Yes. We help you choose the right domain name, register it, and set up reliable hosting so your website stays secure and accessible 24/7.',
+  },
+  {
+    id: 'seo-service',
+    title: 'Will my website be SEO-friendly?',
+    content:
+      'Absolutely. Every website we build follows SEO best practices, including fast loading speeds, mobile responsiveness, proper page structure, and search engine optimization.',
+  },
+  {
+    id: 'mobile-responsive',
+    title: 'Will my website work on mobile devices?',
+    content:
+      'Yes. All websites we create are fully responsive and optimized to provide a seamless experience across desktops, tablets, and smartphones.',
+  },
+  {
+    id: 'support-maintenance',
+    title: 'Do you offer support after launch?',
+    content:
+      'Yes. We provide ongoing support, updates, maintenance, and technical assistance to ensure your website continues to perform at its best.',
   },
 ];
 
@@ -36,16 +54,18 @@ const FAQSection = () => {
     <section className="section contact-faq" aria-labelledby="faq-title">
       <div className="container">
         <p className="section-subtitle" id="faq-title">
-          FAQs
+          Frequently Asked Questions
         </p>
+
         <div className="faq-header">
           <h2 className="h2 section-title">
-            Answers to common partnership questions.
+            Everything you need to know before starting your project.
           </h2>
+
           <p className="section-text">
-            Here’s what teams typically ask before we collaborate. Not seeing
-            your question? Drop it in the message above and we’ll include it in
-            our first reply.
+            Have questions about website development, hosting, domains, or SEO?
+            Here are answers to some of the most common questions our clients
+            ask.
           </p>
         </div>
 
