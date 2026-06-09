@@ -84,11 +84,11 @@ const Header = () => {
             src="/assets/images/logos/logo-darkbg.png"
             width={50}
             height={30}
-            alt="Digital Root home"
+            alt="Digital Root dark"
             className="logo-light"
           />
           <Image
-            src="/assets/images/logos/logo1rbg.png"
+            src="/assets/images/logos/Logo1rbg.png"
             width={50}
             height={30}
             alt="Digital Root home"
