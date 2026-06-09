@@ -28,15 +28,14 @@ const StatSection = () => {
 
           <li>
             <p className="card-text">
-              <span className="h1">50+</span>
-
-              <span className="span">Expert Employees</span>
+              <span className="h1">24/7</span>
+              <span className="span">Support</span>
             </p>
           </li>
 
           <li>
             <p className="card-text">
-              <span className="h1">50+</span>
+              <span className="h1">20+</span>
 
               <span className="span">Awards Won</span>
             </p>
