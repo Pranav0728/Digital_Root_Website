@@ -12,7 +12,7 @@ const StatSection = () => {
         >
           <li>
             <p className="card-text">
-              <span className="h1">7518</span>
+              <span className="h1">50+</span>
 
               <span className="span">Completed Projects</span>
             </p>
@@ -20,7 +20,7 @@ const StatSection = () => {
 
           <li>
             <p className="card-text">
-              <span className="h1">3472</span>
+              <span className="h1">100+</span>
 
               <span className="span">Happy Customers</span>
             </p>
@@ -28,7 +28,7 @@ const StatSection = () => {
 
           <li>
             <p className="card-text">
-              <span className="h1">2184</span>
+              <span className="h1">50+</span>
 
               <span className="span">Expert Employees</span>
             </p>
@@ -36,7 +36,7 @@ const StatSection = () => {
 
           <li>
             <p className="card-text">
-              <span className="h1">4523</span>
+              <span className="h1">50+</span>
 
               <span className="span">Awards Won</span>
             </p>
