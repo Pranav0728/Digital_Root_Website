@@ -59,6 +59,16 @@ const highlights = [
     date: '2024-05-10',
     dateLabel: 'May 2024',
   },
+  {
+    id: 'akevents',
+    title: 'AK Events',
+    description:
+      'Built a professional portfolio website for AK Events to showcase event decorations, attract new clients, and strengthen their online presence.',
+    image: '/assets/images/projects/akevents.png',
+    category: 'Client Project',
+    date: '2025-06-01',
+    dateLabel: 'June 2025',
+  },
 ];
 
 const ProjectsHighlightsSection = () => {
@@ -85,8 +95,8 @@ const ProjectsHighlightsSection = () => {
 
           <p className="section-text">
             From SaaS products to professional business websites, we create
-            modern digital solutions that help people work smarter, grow
-            faster, and achieve their goals.
+            modern digital solutions that help people work smarter, grow faster,
+            and achieve their goals.
           </p>
         </motion.div>
 

@@ -41,6 +41,13 @@ const ProjectSection = () => {
         'Built a modern and responsive IT solutions website for a client, focusing on performance, design, and user experience.',
       category: 'Client Project',
     },
+    {
+      image: '/assets/images/ourproject/akevents.png',
+      title: 'AK Events',
+      description:
+        'Built a professional portfolio website for AK Events to showcase event decorations, attract new clients, and strengthen their online presence.',
+      category: 'Client Project',
+    },
   ];
   return (
     <section className="section project" aria-labelledby="project-label">
