@@ -50,7 +50,7 @@ const ProjectSection = () => {
         </p>
 
         <h2 className="h2 section-title">
-          Products and websites we've built to solve real-world problems.
+          Products and websites we&apos;ve built to solve real-world problems.
         </h2>
 
 

@@ -23,9 +23,9 @@ const ProjectsCTASection = () => {
 
         <motion.h2
           className="h2 section-title"
-          variants={fadeIn('up', 20, 0.5)}
+          variants={fadeIn('up', 20, 0.45)}
         >
-          Let's turn your ideas into a successful online presence.
+          Let&apos;s turn your ideas into a successful online presence.
         </motion.h2>
 
         <motion.p className="section-text" variants={fadeIn('up', 20, 0.58)}>
