@@ -85,8 +85,8 @@ const ProjectsHighlightsSection = () => {
 
           <p className="section-text">
             From SaaS products to professional business websites, we create
-            modern digital solutions that help people work smarter, grow faster,
-            and achieve their goals.
+            modern digital solutions that help people work smarter, grow
+            faster, and achieve their goals.
           </p>
         </motion.div>
 

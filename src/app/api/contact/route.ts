@@ -6,12 +6,14 @@ export async function POST(req: Request) {
     const body = await req.json();
     const { name, email, company, budget, details, nda } = body;
 
-    // Create a transporter using your email service (e.g., Gmail, SMTP)
+    // Create a transporter using your email service
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
       auth: {
-        user: process.env.EMAIL_USER, // Your email address
-        pass: process.env.EMAIL_PASS, // Your app password
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
@@ -44,9 +46,15 @@ export async function POST(req: Request) {
 
     await transporter.sendMail(mailOptions);
 
-    return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });
+    return NextResponse.json(
+      { message: 'Email sent successfully' },
+      { status: 200 }
+    );
   } catch (error) {
     console.error('Error sending email:', error);
-    return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
+    return NextResponse.json(
+      { error: 'Failed to send email' },
+      { status: 500 }
+    );
   }
 }

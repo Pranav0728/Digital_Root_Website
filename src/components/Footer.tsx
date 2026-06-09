@@ -71,8 +71,11 @@ const Footer = () => {
       icon: 'logo-github',
       label: 'GitHub',
     },
-        { href: 'https://www.youtube.com/@pranav8534', icon: 'logo-youtube', label: 'YouTube' },
-
+    {
+      href: 'https://www.youtube.com/@pranav8534',
+      icon: 'logo-youtube',
+      label: 'YouTube',
+    },
   ];
 
   return (
@@ -118,14 +121,10 @@ const Footer = () => {
             <address className="footer-text">
               Navi Mumbai, Maharashtra, India
             </address>
-
           </li>
 
           <li>
-            <Link
-              href="mailto:xroot.info@gmail.com"
-              className="footer-link"
-            >
+            <Link href="mailto:xroot.info@gmail.com" className="footer-link">
               xroot.info@gmail.com
             </Link>
           </li>
