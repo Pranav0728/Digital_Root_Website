@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-
+import { Analytics } from '@vercel/analytics/next';
 import type { LayoutProps } from '@/types';
 
 import { useScroll } from '../hooks/useScroll';
@@ -37,7 +37,9 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main>{children}
+        <Analytics />
+      </main>
       <Footer />
     </>
   );
