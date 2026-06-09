@@ -58,7 +58,6 @@ const services = [
   },
 ];
 
-
 const ServiceOverviewSection = () => {
   return (
     <motion.section
@@ -81,11 +80,14 @@ const ServiceOverviewSection = () => {
             className="h2 section-title"
             variants={fadeIn('up', 24, 0.45)}
           >
-          Everything you need to build and grow your online presence. 
+            Everything you need to build and grow your online presence.
           </motion.h2>
         </div>
 
-        <motion.div className="services-list" variants={staggerContainer(0.2, 0.2)}>
+        <motion.div
+          className="services-list"
+          variants={staggerContainer(0.2, 0.2)}
+        >
           {services.map((service, index) => (
             <motion.div
               key={service.id}
@@ -98,7 +100,10 @@ const ServiceOverviewSection = () => {
                   className="image-container"
                   variants={fadeInScale(0.5)}
                 >
-                  <div className="blob-shape" style={{ ['--accent' as string]: service.accent }} />
+                  <div
+                    className="blob-shape"
+                    style={{ ['--accent' as string]: service.accent }}
+                  />
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -106,8 +111,8 @@ const ServiceOverviewSection = () => {
                     height={450}
                     className="service-image"
                   />
-                  <div 
-                    className="image-accent" 
+                  <div
+                    className="image-accent"
                     style={{ ['--accent' as string]: service.accent }}
                   />
                 </motion.div>
