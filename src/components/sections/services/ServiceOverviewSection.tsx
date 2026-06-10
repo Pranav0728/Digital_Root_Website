@@ -14,7 +14,7 @@ const services = [
     title: 'Website Development & Design',
     description:
       'We build modern, fast, and responsive websites tailored to your business goals. Our team uses technologies such as Next.js, React, Node.js, TypeScript, MongoDB, PostgreSQL, and modern UI frameworks to create websites that look professional and perform flawlessly. Whether you need a business website, portfolio, landing page, SaaS platform, or e-commerce store, we focus on speed, user experience, mobile responsiveness, security, and scalability. Every website is optimized to help you attract customers, build trust, and grow your business online.',
-    image: '/assets/images/services/webdev.png',
+    image: '/assets/images/Services/webdev.png',
     icon: 'code-slash-outline',
     actionLabel: 'Explore Development',
     href: '/contact#quote',
@@ -26,7 +26,7 @@ const services = [
     title: 'Domain Registration',
     description:
       'Your domain name is the foundation of your online identity. We help you choose, register, and manage the perfect domain for your business. From securing popular extensions such as .com, .in, and .net to configuring DNS records, business emails, SSL certificates, and domain security, we handle the complete setup process. Our goal is to ensure your brand has a professional and memorable online presence from day one.',
-    image: '/assets/images/services/domain.png',
+    image: '/assets/images/Services/domain.png',
     icon: 'globe-outline',
     actionLabel: 'Get Your Domain',
     href: '/contact#quote',
@@ -38,7 +38,7 @@ const services = [
     title: 'Reliable Web Hosting',
     description:
       'A great website needs reliable hosting. We provide secure, high-performance hosting solutions designed for speed, stability, and scalability. Our hosting services include SSL certificates, daily backups, uptime monitoring, CDN integration, server optimization, security protection, and technical support. Whether you are launching a small business website or a growing web application, we ensure your website remains fast, secure, and accessible to visitors 24/7.',
-    image: '/assets/images/services/hosting.png',
+    image: '/assets/images/Services/hosting.png',
     icon: 'server-outline',
     actionLabel: 'View Hosting Plans',
     href: '/contact#quote',
@@ -50,7 +50,7 @@ const services = [
     title: 'SEO Optimization',
     description:
       'Having a website is only the first step. We help your business get discovered on Google through proven Search Engine Optimization strategies. Our SEO services include keyword research, on-page optimization, technical SEO, website speed improvements, content optimization, local SEO, schema implementation, and search performance tracking. By improving your visibility in search results, we help attract more qualified visitors, generate leads, and increase business growth over time.',
-    image: '/assets/images/services/seo.png',
+    image: '/assets/images/Services/seo.png',
     icon: 'trending-up-outline',
     actionLabel: 'Boost Your Visibility',
     href: '/contact#quote',
